@@ -1,8 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="AoAlib",
     version="1.0",
+    packages=find_packages(),  # Automatically find the AoAlib package
     python_requires=">=3.12, <=3.13",
     install_requires=[
         "numpy==2.1.2",
